@@ -39,13 +39,14 @@ main_text {
 }
 
 .header {
-  padding: 80px;
+  padding: 50px;
   text-align: center;
-  background-image: url(images/Ottawa_header.PNG);
+  background-image: url(images/header_contourline.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   font-size: 30px;
+  position: relative;
 }
 
 .footer {
