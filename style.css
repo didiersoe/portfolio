@@ -41,7 +41,7 @@ main_text {
 .header {
   padding: 50px;
   text-align: center;
-  background-image: url(/images/header_contourline.png);
+  background-image: url(images/header_contourline.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
