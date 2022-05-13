@@ -202,3 +202,12 @@ img{
 .hide {
   display: none;
 }
+
+.legend_elkglen {
+  max-width: 100%;
+  max-height: auto;
+  position:relative;
+  margin-top: 0.5em;
+  margin-bottom: -3.5em;
+  
+}
