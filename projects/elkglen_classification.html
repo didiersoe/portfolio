@@ -9,77 +9,91 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <title>Portfolio - Didier Soeharjono</title>
-  <link rel="stylesheet" type ="text/css" href="../css/style.css">
+  <link rel="icon" href="../images/globe.png">
+  
+  <!--Twentytwenty & Foundation CSS-->
   <link href="../css/foundation.css" rel="stylesheet" type="text/css" />
   <link href="../css/twentytwenty.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="../images/globe.png">
 
+  <!--Main CSS stylesheet-->
+  <link rel="stylesheet" type ="text/css" href="../css/style.css">
+
+  <!-- Google Font-->
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!--Javascript file-->
+  <script type="text/javascript" src="../js/portfoliojs.js"></script>
 </head>
 
 <body>
   <!--Header-->
   <div class="header">
-  <!--Title & Subtitle-->
-  <title_text>Didier Soeharjono</title_text>
+    <!--Title & Subtitle-->
+    <title_text>Didier Soeharjono</title_text>
     
     
-    <!--Navigation bar-->
-    <nav>
-      <ul class="breadcrumb">
-        <li class ="active_section"><a href="../index.html">Home</a></li>
-        <!-- <li><a href="#footer">Contact</a></li> -->
-      </ul>
-    </nav> 
-    <a href="https://www.linkedin.com/in/didier-soeharjono-353a5917b">  
-      <img src="../images/linkedin.png" class="img_icon">
-    </a>
-    <a href = "mailto:didier.soeharjono@hotmail.com">
-      <img src="../images/email.png" class="img_icon">
-    </a>
-    </div>
+  <!--Navigation bar-->
+  <nav>
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Home</a></li>
+      <!-- <li><a href="#footer">Contact</a></li> -->
+    </ul>
+  </nav> 
+  <a href="https://www.linkedin.com/in/didier-soeharjono-353a5917b">  
+    <img src="../images/linkedin.png" class="img_icon">
+  </a>
+  <a href = "mailto:didier.soeharjono@hotmail.com">
+    <img src="../images/email.png" class="img_icon">
+  </a>
+  </div>
 
   <subtitle_text>Elk Glen, Manitoba - Supervised Classification</subtitle_text>
   <hr>
   
-  <main_text>PlanetScope Imagery</main_text>
+  <!--Projects-->
   <div class="row" style="margin-top: 2em;">
-    <div class="large-8 columns">
+    <div class="large-8 columns">        
+      <main_text>PlanetScope Imagery Classification</main_text>
       <div class="twentytwenty-container">
         <img src="../images/planet_image.PNG">
         <img src="../images/planet_classification.PNG">
       </div>
     </div>
   </div>
-
   <br>
 
-  <main_text>Sentinel-2 Imagery</main_text>
   <div class="row" style="margin-top: 2em;">
     <div class="large-8 columns">
+      <main_text>Sentinel-2 Imagery Classification</main_text>
       <div class="twentytwenty-container">
         <img src="../images/s2_image.PNG">
         <img src="../images/s2_classification.PNG">
       </div>
     </div>
   </div>
-
   <br>
-  <main_text>Sentinel-1 & Sentinel-2 Mosaic Imagery</main_text>
+
   <div class="row" style="margin-top: 2em;">
     <div class="large-8 columns">
-      <div class="twentytwenty-container">
-        <img src="../images/s1_image.PNG">
-        <img src="../images/s1_s2_classification.PNG">
+      <main_text>Sentinel-1 & Sentinel-2 Mosaic Classification</main_text>
+      <div class="image-compare-set">
+        <div class="twentytwenty-container">
+          <img src="../images/s1_image.PNG">
+          <img src="../images/s1_s2_classification.PNG">
+        </div>
       </div>
     </div>
   </div>
+<br>
 
 
 
-    <script
+  <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+  </script>
     <script src="../js/jquery.event.move.js"></script>
     <script src="../js/jquery.twentytwenty.js"></script>
     <script>
@@ -90,7 +104,21 @@
         after_label: 'Classification'
       })
     });
+
     </script>
+
+    <script>
+          function showSlide(slideNumber)
+    {  
+        $(".image-compare-set").hide();
+        $('.image-compare-set[data-image-num="' + slideNumber + '"]').show();
+        $(".twentytwenty").twentytwenty(); //line added
+    }
+    </script>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
+
   </body>
 </html>
 

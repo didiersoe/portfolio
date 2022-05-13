@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 
- <!-- Required meta tags -->
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
- <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
- 
-<title>Portfolio - Didier Soeharjono</title>
-<link rel="stylesheet" type ="text/css" href="css/style.css">
-<link rel="icon" href="images/globe.png">
-</head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <title>Portfolio - Didier Soeharjono</title>
+  <link rel="stylesheet" type ="text/css" href="css/style.css">
+  <link rel="icon" href="images/globe.png">
+
+  <!-- Google Font-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!--Javascript file-->
+  <script type="text/javascript" src="js/portfoliojs.js"></script>
+  </head>
+
 <body>
-<!--Header-->
-<div class="header">
-<!--Title & Subtitle-->
-  <title_text>Didier Soeharjono</title_text>
+  <!--Header-->
+  <div class="header">
+  <!--Title & Subtitle-->
+    <title_text>Didier Soeharjono</title_text>
 
 
-<!--Navigation bar-->
-<nav>
-  <ul class="breadcrumb">
-    <li class ="active_section"><a href="index.html">Home</a></li>
-    <!-- <li><a href="#footer">Contact</a></li> -->
-  </ul>
-</nav> 
-<a href="https://www.linkedin.com/in/didier-soeharjono-353a5917b">  
-  <img src="images/linkedin.png" class="img_icon">
-</a>
-<a href = "mailto:didier.soeharjono@hotmail.com">
-  <img src="images/email.png" class="img_icon">
-</a>
-</div>
-
-<subtitle_text>About Me</subtitle_text>
-<main_text>
-    Hello! I'm Didier Soeharjono. I am a Geomatics student that is starting his career as a GIS professional.<br>
-    I enjoy exploring the interactions between the natural and built environments through the use of geospatial data.<br>
-    I created this website to display the various projects I've worked on and to improve my GIS & web development skills.<br>
-</main_text>
-<hr>
-
-<subtitle_text>Projects</subtitle_text>
-
-<!--PROJECTS CARDS-->
-<div class="container">
-  <div class="wrap">
-
-    <div class="card">
-      <div class="img">
-        <img src="images/planet_classification.PNG" alt="">
-        <a href="projects/elkglen_classification.html" class="stretched-link"></a>
-      </div>
-      <div class="txt">
-        <h5 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Elk Glen, Manitoba - Supervised Classification</h5>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="img">
-        <img src="images/s2_shoreline.PNG" alt="">
-        <a href="projects/shoreline_extraction.html" class="stretched-link"></a>
-      </div>
-      <div class="txt">
-        <h5 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Automated Shoreline Extraction</h5>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="img">
-        <img src="images/final_coastline.PNG" alt="">
-        <a href="projects/coastline_extraction.html" class="stretched-link"></a>
-      </div>
-      <div class="txt">
-        <h5 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">National Coastline Extraction</h5>
-      </div>
-    </div>
-
-
-
+  <!--Navigation bar-->
+  <nav>
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <!-- <li><a href="#footer">Contact</a></li> -->
+    </ul>
+  </nav> 
+  <a href="https://www.linkedin.com/in/didier-soeharjono-353a5917b">  
+    <img src="images/linkedin.png" class="img_icon">
+  </a>
+  <a href = "mailto:didier.soeharjono@hotmail.com">
+    <img src="images/email.png" class="img_icon">
+  </a>
   </div>
-</div>
 
-<!--FOOTER-->
-<div id="footer"></div>
+  <subtitle_text>About Me</subtitle_text>
+  <main_text>
+      Hello! I'm Didier Soeharjono. I am a Geomatics student that is starting his career as a GIS professional.<br>
+      I enjoy exploring the interactions between the natural and built environments through the use of geospatial data.<br>
+      I created this website to display the various projects I've worked on and to improve my GIS & web development skills.<br>
+  </main_text>
+  <hr>
+
+  <subtitle_text>Projects</subtitle_text>
+
+  <!--PROJECTS CARDS-->
+  <div class="container">
+    <div class="wrap">
+
+      <div class="card">
+        <div class="img">
+          <img src="images/planet_classification.PNG" alt="">
+          <a href="projects/elkglen_classification.html" class="stretched-link"></a>
+        </div>
+          <div class="txt">
+          Elk Glen, Manitoba - Supervised Classification
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="images/s2_shoreline.PNG" alt="">
+          <a href="projects/shoreline_extraction.html" class="stretched-link"></a>
+        </div>
+          <div class="txt">
+          Automated Shoreline Extraction
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="images/final_coastline.PNG" alt="">
+          <a href="projects/coastline_extraction.html" class="stretched-link"></a>
+        </div>
+          <div class="txt">
+          National Coastline Extraction
+          </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div id="footer"></div>
 
 </body>
 </html>

@@ -91,6 +91,10 @@ select {
   margin-top: 0;
   margin-bottom: 0;
   max-width: 62.5em;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";
